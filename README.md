@@ -51,7 +51,7 @@ test('index.js', function(t){
 });
 ```
 
-`npm i s minimist`
+`npm i s minimist through2`
 
 Here's `index.js`:
 
