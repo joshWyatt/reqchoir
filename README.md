@@ -23,10 +23,10 @@ Add to your package.json the property:
 
 From the command line in the root directory of your repo:
 
-`.gitignore`
+`echo node\/modules\/* > .gitignore`
 
 Add to `package.json` the property:
-`precommit: test`
+`pre-commit: test`
 
 write `test.config`, which will load all the files in `/test` and pipe them through tape into stdout:
 
@@ -55,7 +55,7 @@ test('index.js', function(t){
 });
 ```
 
-`npm i s string-to-stream concat-stream`
+`npm i -s string-to-stream concat-stream`
 
 Here's `index.js`:
 
@@ -106,13 +106,22 @@ str(rechoir).pipe(writeableStream);
 
 If you're publishing to npm, test it locally:
 
-`npm i g ./`
+`npm i -g ./`
 
-`mkdir temp/`
+`mkdir local_test/`
 
 `cd temp/`
 
 `reqchoir yes.js through2 trumpet fs hyperquest`
+
+confirm it worked:
+
+`cat yes.js`
+
+clean up:
+
+`cd ..`
+`rm -rf local_test/`
 
 And finally:
 
