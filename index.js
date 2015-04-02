@@ -1,12 +1,11 @@
-var argv = process.argv.slice(2);
-rechoir = argv.map(function(module){
+var file = require('path').resolve(process.argv.slice(2)[0]);
+var modules = process.argv.slice(3);
+
+var rechoir = modules.map(function(module){
   return "var " + module + " = require('" + module + "');";
-  // return 'a';
 }).join('\n');
 
 
 var str = require('string-to-stream');
-str(rechoir).pipe(process.stdout);
-
-
-var fs = require('fs');
+var ws = require('fs').createWriteStream(file);
+str(rechoir).pipe(ws);
