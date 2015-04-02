@@ -3,15 +3,16 @@
   "version": "1.0.0",
   "description": "Create new JavaScript files with all your requires required",
   "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
     "test": "node test.config.js test/*.js | faucet"
   },
   "bin": {
     "reqchoir": "index.js"
   },
-  "pre-commit": [
-    "test"
-  ],
+  "pre-commit": ["test"],
   "author": "joshWyatt",
   "license": "ISC",
   "devDependencies": {
@@ -22,9 +23,6 @@
   "dependencies": {
     "string-to-stream": "^1.0.0",
     "through2": "^0.6.3"
-  },
-  "directories": {
-    "test": "test"
   },
   "repository": {
     "type": "git",

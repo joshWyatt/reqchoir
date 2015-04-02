@@ -17,7 +17,7 @@ var writeableStream = concat(function(modules){
   test('index.js', function(t){
     t.plan(1);
 
-    t.fail(modules.toString(), testFile);
+    t.equals(modules.toString(), testFile);
   });
 });
 
