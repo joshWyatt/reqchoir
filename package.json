@@ -1,6 +1,6 @@
 {
   "name": "reqchoir",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Create new JavaScript files with all your requires required",
   "main": "index.js",
   "directories": {

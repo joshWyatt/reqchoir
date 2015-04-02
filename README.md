@@ -1,5 +1,3 @@
-#reqchoir
-
 Create new JavaScript files with all your requires required.
 
 ####How to use / build
