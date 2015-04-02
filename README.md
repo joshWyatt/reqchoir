@@ -8,8 +8,6 @@ From the command line in the root directory of your repo:
 
 `echo -e '#reqchoir\n\nCreate new JavaScript files with all your requires required.\n\n####Usage\n\n' > README.md`
 
-`git commit`
-
 `npm adduser`
 
 `npm init`
@@ -26,8 +24,6 @@ From the command line in the root directory of your repo:
 Add to `package.json` the property:
 `precommit: test`
 
-`git commit`
-
 write `test.config`, which will load all the files in `/test` and pipe them through tape into stdout:
 
 ```javascript
@@ -40,8 +36,6 @@ process.argv.slice(2).forEach(function(file){
   require(path.resolve(file));
 });
 ```
-
-`git commit`
 
 create `index.js` and `test/index.test.js`
 
@@ -57,18 +51,12 @@ test('index.js', function(t){
 });
 ```
 
-`git commit`
-
 `npm i s minimist`
 Here's `index.js`:
 
 
 
-`git commit`
-
 fill in index.test.js
-
-`git commit`
 
 mkcd gt/
 npm i g reqchoir
