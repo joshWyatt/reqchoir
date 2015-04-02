@@ -52,14 +52,29 @@ test('index.js', function(t){
 ```
 
 `npm i s minimist`
+
 Here's `index.js`:
 
+```javascript
 
+```
 
-fill in index.test.js
+Copy `index.js` into `index.test.js` and add some tests:
 
-mkcd gt/
-npm i g reqchoir
-reqchoir yes.js through2 trumpet muxdemux --minimist ('minimist')() faucet path --concat ('concat-stream') --- fs hyperquest
+```javascript
 
-npm publish (except this part won't work for you cause it's alread published)
+```
+
+If you're publishing to npm, test it locally:
+
+`npm i g reqchoir`
+
+`mkdir temp/`
+
+`cd temp/`
+
+`reqchoir yes.js through2 trumpet --ecstatic ('esctatic')(__dirname + '/static') --concat ('concat-stream') --- fs hyperquest`
+
+And finally:
+
+`npm publish`
