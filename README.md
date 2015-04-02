@@ -51,7 +51,7 @@ test('index.js', function(t){
 });
 ```
 
-`npm i s minimist through2`
+`npm i s string-to-stream`
 
 Here's `index.js`:
 
