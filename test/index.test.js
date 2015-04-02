@@ -9,7 +9,7 @@ var rechoir = modules.map(function(module){
 
 var testFile = "var through2 = require('through2');\n" +
 "var concat-stream = require('concat-stream');\n" +
-"var ecstatic = require('ecstatic');"
+"var ecstatic = require('ecstatic');";
 
 var str = require('string-to-stream');
 var writeableStream = concat(function(modules){
