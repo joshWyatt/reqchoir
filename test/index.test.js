@@ -3,7 +3,7 @@ var concat = require('concat-stream');
 
 var modules = ['through2', 'concat-stream', 'ecstatic'];
 
-var rechoir = modules.map(function(module){
+var reqs = modules.map(function(module){
   return "var " + module + " = require('" + module + "');";
 }).join('\n');
 
@@ -22,4 +22,4 @@ var writeableStream = concat(function(modules){
 });
 
 
-str(rechoir).pipe(writeableStream);
+str(reqs).pipe(writeableStream);

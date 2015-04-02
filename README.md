@@ -62,14 +62,14 @@ Here's `index.js`:
 var file = require('path').resolve(process.argv.slice(2)[0]);
 var modules = process.argv.slice(3);
 
-var rechoir = modules.map(function(module){
+var reqs = modules.map(function(module){
   return "var " + module + " = require('" + module + "');";
 }).join('\n');
 
 
 var str = require('string-to-stream');
 var ws = require('fs').createWriteStream(file);
-str(rechoir).pipe(ws);
+str(reqs).pipe(ws);
 ```
 
 Use `index.js` as a template to write a test in `index.test.js`:
@@ -80,7 +80,7 @@ var concat = require('concat-stream');
 
 var modules = ['through2', 'concat-stream', 'ecstatic'];
 
-var rechoir = modules.map(function(module){
+var reqs = modules.map(function(module){
   return "var " + module + " = require('" + module + "');";
 }).join('\n');
 
@@ -99,7 +99,7 @@ var writeableStream = concat(function(modules){
 });
 
 
-str(rechoir).pipe(writeableStream);
+str(reqs).pipe(writeableStream);
 
 ```
 
