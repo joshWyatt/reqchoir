@@ -12,7 +12,7 @@
   "pre-commit": [
     "test"
   ],
-  "author": "",
+  "author": "joshWyatt",
   "license": "ISC",
   "devDependencies": {
     "faucet": "0.0.1",
@@ -22,5 +22,19 @@
   "dependencies": {
     "string-to-stream": "^1.0.0",
     "through2": "^0.6.3"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joshWyatt/reqchoir.git"
+  },
+  "keywords": [
+    "require"
+  ],
+  "bugs": {
+    "url": "https://github.com/joshWyatt/reqchoir/issues"
+  },
+  "homepage": "https://github.com/joshWyatt/reqchoir"
 }
