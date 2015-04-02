@@ -1,6 +1,8 @@
 #reqchoir
 
-Create new JavaScript files with all your requires required
+Create new JavaScript files with all your requires required.
+
+####How to use / build
 
 For this README you'll learn how to make reqchoir. Then you will know how to use it.
 
