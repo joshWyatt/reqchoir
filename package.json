@@ -1,0 +1,19 @@
+{
+  "name": "reqchoir",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.config.js test/*.js | faucet"
+  },
+  "pre-commit": [
+    "test"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "faucet": "0.0.1",
+    "pre-commit": "^1.0.6",
+    "tape": "^3.5.0"
+  }
+}
