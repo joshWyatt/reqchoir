@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var file = require('path').resolve(process.argv.slice(2)[0]);
 var modules = process.argv.slice(3);
 

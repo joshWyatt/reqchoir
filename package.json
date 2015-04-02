@@ -1,10 +1,13 @@
 {
   "name": "reqchoir",
   "version": "1.0.0",
-  "description": "test",
+  "description": "Create new JavaScript files with all your requires required",
   "main": "index.js",
   "scripts": {
     "test": "node test.config.js test/*.js | faucet"
+  },
+  "bin": {
+    "reqchoir": "index.js"
   },
   "pre-commit": [
     "test"
@@ -17,6 +20,7 @@
     "tape": "^3.5.0"
   },
   "dependencies": {
+    "string-to-stream": "^1.0.0",
     "through2": "^0.6.3"
   }
 }
