@@ -5,11 +5,13 @@ For this README you'll learn how to make reqchoir. Then you will know how to use
 Create a new repo, clone it and cd into it.
 
 From the command line in the root directory of your repo:
+
 `echo -e '#reqchoir\n\nCreate new JavaScript files with all your requires required.\n\n####Usage\n\n' > README.md`
 
 `git commit`
 
 `npm adduser`
+
 `npm init`
 
 Add to your package.json the property:
@@ -18,14 +20,15 @@ Add to your package.json the property:
 `npm i --save-dev tape pre-commit faucet`
 
 From the command line in the root directory of your repo:
+
 `.gitignore`
 
-Add to your package.json the property:
+Add to `package.json` the property:
 `precommit: test`
 
 `git commit`
 
-write test.config, which will load all the files in /test and pipe them through tape into stdout:
+write `test.config`, which will load all the files in `/test` and pipe them through tape into stdout:
 
 ```javascript
 var test = require('tape');
@@ -40,9 +43,9 @@ process.argv.slice(2).forEach(function(file){
 
 `git commit`
 
-create index.js and test/index.test.js
+create `index.js` and `test/index.test.js`
 
-write a passing version of test/index.test.js:
+write a passing version of `test/index.test.js`:
 
 ```javascript
 var test = require('tape');
@@ -56,8 +59,10 @@ test('index.js', function(t){
 
 `git commit`
 
-npm i s minimist
-write index.js
+`npm i s minimist`
+Here's `index.js`:
+
+
 
 `git commit`
 
