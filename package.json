@@ -12,7 +12,9 @@
   "bin": {
     "reqchoir": "index.js"
   },
-  "pre-commit": ["test"],
+  "pre-commit": [
+    "test"
+  ],
   "author": "joshWyatt",
   "license": "ISC",
   "devDependencies": {
