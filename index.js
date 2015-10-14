@@ -11,3 +11,4 @@ var reqs = modules.map(function(module){
 var str = require('string-to-stream');
 var ws = require('fs').createWriteStream(file);
 str(reqs).pipe(ws);
+
